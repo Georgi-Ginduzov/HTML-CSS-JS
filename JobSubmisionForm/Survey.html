@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job application survey</title>
+    <link rel="stylesheet" href="C:\Users\User\HTML projects\JobSubmisionForm\CSS\SurveyStyle.css">    
+</head>
+<body>
+    <h1>Job Application Survey Form</h1>
+
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Enter your full name" required> 
+        <br/>
+        <label for="email">Email</label>
+        <input type="text" name="email" placeholder="Enter your email"> 
+        <br/>
+        <p>
+            <label>Title</label><br>
+            <label>
+              <input type="radio" name="title" value="mr">
+              Mr
+            </label>
+            <label>
+              <input type="radio" name="title" value="mrs">
+              Mrs
+            </label>
+            <label>
+              <input type="radio" name="title" value="miss">
+              Miss
+            </label>
+          </p>
+        <br>
+        <label for="formFileMultiple" class="form-label">Enter CV(Motivational letter is optional):</label>
+        <input class="form-control" type="file" id="formFileMultiple" multiple>
+        <br/> 
+
+        
+    </form>
+</body>
+</html>
