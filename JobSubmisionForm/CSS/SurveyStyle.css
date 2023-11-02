@@ -23,16 +23,27 @@ form{
     display:block;
 }
 .form-control textarea{
-    padding: 10px;
-    max-width: 100%;
+    width: 90%;
+    height:auto;
+    text-wrap: auto;
+    height:fit-content;
     line-height: 2;
-    border-radius: 30px;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 1px #999;
+    border-radius: 5px;
     text-align:left;
 }
-label{
+.form-control input[type="radio"], 
+    .form-control input[type="checkbox"] {
+        display: inline-block;
+        width:auto;
+    }
+#proffessional-level{
+    width:93.7%;
     margin-top: 5px;
+    padding: 10px;
+}
+
+label{
+    margin: 5px;
 }
 
 input{
@@ -47,6 +58,4 @@ input::placeholder {
 input:focus::placeholder{
     opacity: 0;
 }
-input:placeholder-c{
-    color: red;
-}
+
