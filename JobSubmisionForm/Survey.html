@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job application survey</title>
     <link rel="stylesheet" href="CSS/SurveyStyle.css">    
-    
+    <link rel="stylesheet" href="https://unpkg.com/open-props"> 
 </head>
 <body>
-    <h1>Job Application Survey Form</h1>
+    
+    <header class="header" id="header">
+        <h1>Junior .Net Application Survey Form</h1>
+    </header>
 
     <form>
         <div class="form-control">
@@ -113,10 +116,13 @@
         <input class="form-control" type="file" id="formFileMultiple" multiple>
         <br/>
 
-        <div class="button-container">
-          <button type="button" id="submit-button">Submit</button>
-        </div>
+        
         
     </form>
+    <footer>
+        <div class="button-container">
+            <button type="button" id="submit-button">Submit application</button>
+        </div>
+    </footer>
 </body>
 </html>
