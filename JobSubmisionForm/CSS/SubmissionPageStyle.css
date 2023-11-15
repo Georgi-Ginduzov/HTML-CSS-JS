@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* This ensures the full viewport height is covered */
+    background: linear-gradient(-75deg, #ee7752, #23a6d5, #23d5ab, white);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.form-control {
+    text-align: center;
+}
+
+#thank-text-box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#thank-you-message {
+    font-size: 48px;
+    color: #333;
+}
+
+#approval-message {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px; /* Add some space between the messages */
+}
+
+
+
