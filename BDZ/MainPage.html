@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>БДЖ - пътнически превози</title>
+    <title>BDZ - train servises</title>
     <link rel="stylesheet" href="CSS/MainPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="#">Website</a></div>
-            <!-- logo -- div class="logo"><a href="#"> Website</a></ -->
+            <div class="logo"><a href="#">BG Railway</a></div>
+
             <ul class="links">
                 <li><a href="bdz">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="services">Servises</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="book-ticket">Book Ticket</a></li>
+                <li><a href="live-location">Live Location</a></li>
+                <li><a href="contact">Trains</a></li>
             </ul>
             <a href="#" class="action-btn">Get started</a>
             <toggle class="toggle-btn">
@@ -32,5 +32,32 @@
             <li><a href="#" class="action-btn">Get started</a></li>
         </div>
     </header>
+
+    <main>
+        <section id="hero">
+            <p>Railway Services</p>
+            <h1>Welcome To Bulgaria Railway</h1>
+            <p>Bulgaria Railway is the state-owned rail
+                transport company of Bulgaria. It is the 
+                largest railway operator in the country.
+            </p>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+    </script>
+
 </body>
 </html>
