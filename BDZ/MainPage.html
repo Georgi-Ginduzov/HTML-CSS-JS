@@ -6,10 +6,12 @@
     <title>BDZ - train servises</title>
     <link rel="stylesheet" href="CSS/MainPage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <div class="logo"><a href="#">BG Railway</a></div>
 
             <ul class="links">
@@ -18,7 +20,7 @@
                 <li><a href="live-location">Live Location</a></li>
                 <li><a href="contact">Trains</a></li>
             </ul>
-            <a href="#" class="action-btn">Get started</a>
+            <a href="#" class="action-btn">Log in</a>
             <toggle class="toggle-btn">
                 <i class="fa-solid fa-bars"></i>
             </toggle>
@@ -26,14 +28,17 @@
 
         <div class="dropdown-menu">
             <li><a href="bdz">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="services">Servises</a></li>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="#" class="action-btn">Get started</a></li>
+            <li><a href="book-ticket">Book Ticket</a></li>
+            <li><a href="live-location">Live Location</a></li>
+            <li><a href="contact">Trains</a></li>
+            <li><a href="#" class="action-btn">Log in</a></li>
         </div>
+
     </header>
 
-    <main>
+
+
+    <!-- <main>
         <section id="hero">
             <p>Railway Services</p>
             <h1>Welcome To Bulgaria Railway</h1>
@@ -42,22 +47,24 @@
                 largest railway operator in the country.
             </p>
         </section>
-    </main>
+    </main> -->
+
 
     <script>
-        const toggleBtn = document.querySelector('.toggle-btn')
-        const toggleBtnIcon = document.querySelector('.toggle-btn i')
-        const dropDownMenu = document.querySelector('.dropdown-menu')
-
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn i');
+        const dropDownMenu = document.querySelector('.dropdown-menu');
+    
         toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+    
             toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars';
         }
     </script>
+    
 
 </body>
 </html>
