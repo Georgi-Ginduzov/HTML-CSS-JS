@@ -6,7 +6,10 @@
 }
 
 body{
-    height: 80vh;
+    height: 100vh;
+    /*background-image: url(/Pictures/switzerland_innovation.jpeg);*/
+    background: white;
+    overflow-x: hidden;
     background-size: cover;
     background-position: center;
 }
@@ -17,7 +20,7 @@ li{
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #000;
     font-size: 1rem;
 }
 a:hover{
@@ -26,30 +29,45 @@ a:hover{
 }
 
 /* HEADER */
-
 header{
     position: relative;
-
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(15px);
+    z-index: 1;
+    justify-content: flex-start;
 }
 
-nav{
+nav{    
     width: 100%;
-    max-width: 1200px;
     height: 60px;
     margin: 0 auto;
+    position: absolute; /* Change from relative to fixed */
+    top: 0; /* Add this line */
     padding-left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 2rem;
     padding-right: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-nav .logo a{
+
+nav .logo a{ 
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+/* CHANGE COLOUR ON BACKGROUND AND TEXT ON FOCUS*/
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+nav a:hover{
+    background: lightblue;
+    color: white;
+    transition-delay: .3;
+
 }
 
 nav .links{
@@ -69,7 +87,7 @@ nav:first-child{
 }
 
 .action-btn{
-    background-color: orange;
+    background-color: skyblue;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -90,16 +108,69 @@ nav:first-child{
     scale: 0.95;
 }
 
-/* PARALLAX - To Do*/
-.paralax{
-    background-image: url(/Pictures/640x-transformed.png);
+/* PARALLAX EFFECT */
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    z-index: -1;
+}
 
-    min-height: 500px;
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+/* HERO */
+section#hero{
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    padding-left: 5rem;
+    position: absolute;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#hero h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+#hero p{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/*  CONTENT */  
+.sec {
+    position: flex;
+    background: green;
+    padding: 100px;
+    margin-top:auto;
+}
+
+.sec h2{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sec p{
+    font-size: 1em;
+    color: white;
+    font-weight: 300;
 }
 
 /* DROPDOWN MENU */
@@ -115,6 +186,7 @@ nav:first-child{
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1001;
 }
 
 .dropdown-menu.open{
