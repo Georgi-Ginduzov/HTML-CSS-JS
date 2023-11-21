@@ -7,8 +7,7 @@
 
 body{
     height: 100vh;
-    /*background-image: url(/Pictures/switzerland_innovation.jpeg);*/
-    background: white;
+    background: #ddd;
     overflow-x: hidden;
     background-size: cover;
     background-position: center;
@@ -39,8 +38,8 @@ nav{
     width: 100%;
     height: 60px;
     margin: 0 auto;
-    position: absolute; /* Change from relative to fixed */
-    top: 0; /* Add this line */
+    position: absolute; 
+    top: 0; 
     padding-left: 0;
     display: flex;
     align-items: center;
@@ -50,29 +49,36 @@ nav{
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-
 nav .logo a{ 
     font-size: 1.5rem;
     font-weight: bold;
 }
 
+nav .logo a:hover{
+    color: rgb(245, 64, 64);
+    transition-delay: .3;
+}
+
 /* CHANGE COLOUR ON BACKGROUND AND TEXT ON FOCUS*/
 nav a{
+    color: white;
+}
+
+nav .links:hover{
+    color: white;
+}
+
+nav .links{
     text-decoration: none;
     color: white;
     padding: 6px 15px;
     border-radius: 20px;
-}
-nav a:hover{
-    background: lightblue;
-    color: white;
-    transition-delay: .3;
-
-}
-
-nav .links{
     display: flex;
     gap: 2rem;
+}
+
+nav .links::marker{
+    text-decoration: underline;
 }
 
 nav .toggle-btn{
@@ -87,7 +93,7 @@ nav:first-child{
 }
 
 .action-btn{
-    background-color: skyblue;
+    background-color: rgb(245, 64, 64);
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -124,41 +130,112 @@ nav:first-child{
     left: 0;
     width: 100%;
     pointer-events: none;
+    max-height: 130vh;
+
 }
 
 /* HERO */
 section#hero{
-    height: calc(100vh - 60px);
+    height: calc(115vh);
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
     text-align: left;
     color: white;
-    padding-left: 5rem;
+    padding-left: 4rem;
     position: absolute;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #hero h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-bottom: 2rem;
     margin-top: 1rem;
     text-align: left;
 }
 
 #hero p{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    margin-bottom: 0.7rem;
     text-align: left;
+}
+
+/* BOOK А TRAIN BOX 
+.book-train-box{
+    position: relative;
+    border: 0.5px solid #686464;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:30px;
+    margin-top: 450px;
+    border-radius: 25px;
+    height: 16vh;
+    width: 60vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.book-train-box p{
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.book-train-box input{
+    height: 35px;
+    background-color: rgb(236,243,242);
+    font-size:medium;
+    padding: 15px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-radius: 8px;
+    width: 60%;
+}
+
+#passengers-count{
+    height: 35px;
+    padding: 15px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+    border-radius: 8px;
+    width: 60%;
+}
+
+#search-train{
+    height: 50px;
+    margin-top: 38px;
+    border-radius: 8px;
+    width: 70%;
+    font-size:medium;
+
+}*/
+form{
+    position: relative;
+    background-color: #ddd;
+    border: solid black 2px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 60vh;
+}
+
+.book-ticket{
+    row-gap: 1em;
 }
 
 /*  CONTENT */  
 .sec {
-    position: flex;
+    position: relative;
     background: green;
     padding: 100px;
-    margin-top:auto;
+    margin-top: 1000px;;
 }
 
 .sec h2{
@@ -208,7 +285,7 @@ section#hero{
     justify-content: center;
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE DESIGN*/ 
 @media(max-width: 922px){
     nav .links,
     nav .action-btn{
