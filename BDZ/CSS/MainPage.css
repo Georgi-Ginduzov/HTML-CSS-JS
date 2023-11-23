@@ -5,14 +5,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-body{
-    height: 100vh;
-    background: #ddd;
-    overflow-x: hidden;
-    background-size: cover;
-    background-position: center;
-}
-
 li{
     list-style: none;
 }
@@ -22,10 +14,30 @@ a{
     color: #000;
     font-size: 1rem;
 }
+
+:root {
+    --step--2: clamp(0.7813rem, 0.357rem + 2.1213vw, 2.88rem);
+    --step--1: clamp(0.9375rem, 0.3993rem + 2.6911vw, 3.6rem);
+    --step-0: clamp(1.125rem, 0.4428rem + 3.4112vw, 4.5rem);
+    --step-1: clamp(1.35rem, 0.4858rem + 4.3209vw, 5.625rem);
+    --step-2: clamp(1.62rem, 0.5261rem + 5.4694vw, 7.0313rem);
+    --step-3: clamp(1.9438rem, 0.5599rem + 6.9191vw, 8.7894rem);
+    --step-4: clamp(2.3325rem, 0.5832rem + 8.7467vw, 10.9863rem);
+    --step-5: clamp(2.7994rem, 0.5891rem + 11.0512vw, 13.7331rem);
+}
+body{
+    height: 100vh;
+    background: rgb(248,249,255);
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
 a:hover{
     color: orange;
     transition-delay: .3;
 }
+
 
 /* HEADER */
 header{
@@ -130,7 +142,7 @@ nav:first-child{
     left: 0;
     width: 100%;
     pointer-events: none;
-    max-height: 130vh;
+    height: auto;
 
 }
 
@@ -149,85 +161,50 @@ section#hero{
 }
 
 #hero h1{
-    font-size: 4.5rem;
+    font-size: var(--step-1);
     margin-bottom: 2rem;
     margin-top: 1rem;
     text-align: left;
 }
 
 #hero p{
-    font-size: 1.7rem;
+    font-size: clamp(1.125rem, 1.0113rem + 0.5685vw, 1.6875rem);
     margin-bottom: 0.7rem;
     text-align: left;
 }
 
-/* BOOK А TRAIN BOX 
-.book-train-box{
-    position: relative;
-    border: 0.5px solid #686464;
-    margin: 0 auto;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    padding:30px;
-    margin-top: 450px;
-    border-radius: 25px;
-    height: 16vh;
-    width: 60vw;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.book-train-box p{
-    padding-bottom: 1rem;
-    font-weight: 600;
-    font-size: 1.3rem;
-}
-
-.book-train-box input{
-    height: 35px;
-    background-color: rgb(236,243,242);
-    font-size:medium;
-    padding: 15px;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    border-radius: 8px;
-    width: 60%;
-}
-
-#passengers-count{
-    height: 35px;
-    padding: 15px;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    border-radius: 8px;
-    width: 60%;
-}
-
-#search-train{
-    height: 50px;
-    margin-top: 38px;
-    border-radius: 8px;
-    width: 70%;
-    font-size:medium;
-
-}*/
+/* BOOK TICKET */
 form{
     position: relative;
-    background-color: #ddd;
-    border: solid black 2px;
+    background-color: rgb(253,253,253);
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     align-content: center;
     margin: 0 auto;
-    width: 60vh;
+    width: 60vw;
+    padding: 20px;
+    border-radius: 20px;
 }
 
-.book-ticket{
-    row-gap: 1em;
+.book-ticket div{
+    gap: 1em;
+}
+
+.book-ticket label{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.book-ticket input{
+    margin: 10px 0px;
+    width: 60%;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    background-color: rgb(243,250,248);
 }
 
 /*  CONTENT */  
