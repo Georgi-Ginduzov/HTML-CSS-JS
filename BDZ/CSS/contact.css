@@ -23,7 +23,7 @@ li{
 
 body{
     height: 100vh;
-    background: rgb(248,249,255);
+    background: lightgray;
     overflow-x: hidden;
     background-size: cover;
     background-position: center;
@@ -153,88 +153,6 @@ nav:first-child{
 
 }
 
-/* HERO */
-section#hero{
-    height: 105vh;    
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    text-align: left;
-    color: white;
-    padding-left: 4rem;
-    position: absolute;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-#hero h1{
-    font-size: var(--step-1);
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    text-align: left;
-}
-
-#hero p{
-    font-size: clamp(1.125rem, 1.0113rem + 0.5685vw, 1.6875rem);
-    margin-bottom: 0.7rem;
-    text-align: left;
-}
-
-/* BOOK TICKET */
-form{
-    position: absolute;
-    top: 135vh;
-    left: 20%;
-    margin: 0 auto;
-    background-color: rgb(253,253,253);
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    width: 70vw;
-    padding: 20px;
-    border-radius: 20px;
-    height: auto;
-}
-
-.book-ticket div{
-    gap: 1em;
-}
-
-.book-ticket label{
-    font-size: clamp(1.2rem, 1.0394rem + 0.3032vw, 1.5rem);
-    font-weight: bold;
-    color: #4E535A;
-}
-
-.book-ticket input{
-    margin: 10px 0px;
-    width: 60%;
-    padding: 1em 0.5em;
-    border-radius: 10px;
-    border: none;
-    font-size: 1em;
-    background-color: rgb(243,250,248);
-    color: #7A7E82;
-}
-
-.book-ticket #passengers-count{
-    width: 60%;
-    padding: 8px;
-    margin: 10px 0px;
-}
-
-#search-train{
-    background-color: rgb(23,143,114);
-    border-radius: 10px;
-    padding: 15px 15px 10px 15px;
-    margin: 10px 0px;
-    border: none;
-    color: #E6EAEB;
-}
-
 /*  CONTENT */  
 .sec {
     position: relative;
@@ -289,6 +207,7 @@ form{
     display: flex;
     justify-content: center;
 }
+
 
 /* RESPONSIVE DESIGN*/ 
 @media(max-width: 922px){
