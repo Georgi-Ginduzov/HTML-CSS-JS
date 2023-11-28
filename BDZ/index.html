@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Demo Page</title>
-        <link rel="stylesheet" href="/CSS/MainPage.css">
+        <link rel="stylesheet" href="/CSS/style.css">
     </head>
     <body>
         
@@ -42,50 +42,60 @@
                     transport company<br>of Bulgaria. It is the 
                     largest railway operator in the country.
                 </p>
-        </section>
+            </section>
 
-            <!-- Form for booking a ticket -->  
-            <form class="form-booking">
-                <div class="book-ticket">
-                    <label for="depart-from">From</label>
-                    <input type="text" placeholder="Depart" id="depart-from">
-                </div>
+        <!-- Form for booking a ticket -->  
+        <form class="form-booking">
+            <div class="book-ticket">
+                <label for="depart-from">From</label>
+                <input type="text" placeholder="Depart" id="depart-from">
+            </div>
 
-                <div class="book-ticket">
-                    <label for="destination">To</label>
-                    <input type="text" placeholder="Destination" id="destination">
-                </div>
+            <div class="book-ticket">
+                <label for="destination">To</label>
+                <input type="text" placeholder="Destination" id="destination">
+            </div>
 
-                <div class="book-ticket">
-                    <label for="date">Date</label>
-                    <input type="text" placeholder="Search..." id="date">
-                </div>
-                        
-                <div class="book-ticket">
-                    <label for="coach">Coach</label>
-                    <input type="text" placeholder="Search..." id="coach">
-                </div>
+            <div class="book-ticket">
+                <label for="book-ticket__date">Date</label>
+                <input type="date"  id="date" min="" placeholder="">
+            </div>
+                    
+            <div class="book-ticket">
+                <label for="coach" class="book-ticket__coach-label" id="coach_dropdown">Coach</label>
+                <select class="coach__options">
+                    <option value="standard-class">Standard</option>
+                    <option value="first-class">First Class</option>
+                    <option value="sleeper-coach">Sleeper</option>
+                    <option value="buffet-car">Buffet</option>
+                    <option value="luggage-car">Luggage</option>
+                </select>
                 
-                <div class="book-ticket">
-                    <label for="passengers">Passengers</label> 
-                    <select name="passengers-dropdown" class="passengers-count" id="passengers-count">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                    </select>
+                <div class="icon-container">
+                    <i class="fa-regular fa-train-subway"></i>
                 </div>
+            </div>
+            
+            <div class="book-ticket">
+                <label for="passengers">Passengers</label> 
+                <select name="passengers-dropdown" class="passengers-count" id="passengers-count">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
 
-                <div class="book-ticket">
-                    <button type="submit" class="btn-submit" id="search-train">Search</button>
-                </div>
+            <div class="book-ticket">
+                <button type="submit" class="btn-submit" id="search-train">Search</button>
+            </div>
 
-            </form>
-        </header>
+        </form>
+    </header>
 
         <main class="main">     
 
@@ -116,6 +126,11 @@
                     : 'fa-solid fa-bars';
             }
 
+            // Get the current date in the format YYYY-MM-DD
+            const currentDate = new Date().toISOString().split('T')[0];
+
+            // Set the minimum date for the input field
+            document.getElementById('date').setAttribute('min', currentDate);
         </script>
 
     </body>

@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +41,7 @@ a:hover{
 /* HEADER */
 .header{ 
   background-image: url("/Pictures/1667948.png");
-  background-color: rgba(0, 0, 0, .5);
+    background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
@@ -157,7 +158,6 @@ nav .toggle-btn{
     width: min(100%, 10vh);
     box-sizing: border-box;
     flex-grow: 1;
-
 }
 
 
@@ -177,28 +177,48 @@ nav .toggle-btn{
     font: inherit;
 }
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+
+}
+
+
 .book-ticket:has(select) {
   gap: 1em;
 }
 
- .passengers-count{
+ .passengers-count,
+ .coach__options{
     padding: 1em 0.5em;
+
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(243,250,248);
+
+    font: inherit;
 }
 
 .btn-submit {
     background-color: rgb(23,143,114);
     border-radius: 10px;
-    padding: .75em 1.5em;
+    padding: 1em 1.5em;
     border: none;
     color: #E6EAEB;
     font: inherit;
 }
 
 /*  CONTENT */  
-.sec {
-    background: green;
+.sec_main-content {
     padding: 6em;
-
 }
 
 .container {
@@ -206,15 +226,15 @@ nav .toggle-btn{
     margin: 0 auto;
 }
 
-.sec h2{
+.sec_main-content h2{
     font-size: var(--step-1);
-    color: white;
+    color: black;
     margin-bottom: 10px;
 }
 
-.sec p{
+.sec_main-content p{
     font-size: 1em;
-    color: white;
+    color: black;
     font-weight: 300;
 }
 
