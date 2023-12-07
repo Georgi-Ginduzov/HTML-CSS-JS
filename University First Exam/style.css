@@ -1,0 +1,15 @@
+.table{
+    color: green;
+
+}
+
+.table td{
+    color: red !;
+    
+}
+
+.test{
+    border-color: solid black;
+    border: 10px 1px 5px 20px;
+    background-color: aqua;
+}

@@ -6,128 +6,154 @@
     <title>Log in or Register</title>
     <link rel="stylesheet" href="CSS/log-in-register-style.css">
     <script src="https://kit.fontawesome.com/41f3c968e1.js" crossorigin="anonymous"></script>
-
-
 </head>
 <body>
     <div class="container">
-        <div class="container-sign-up-wrapper">
-            <form class="sign-up-wrapper">
+        <!-- TRY REMOVING THE FOLLOWING CLASS AND ASSIGN TO FORM ABSOLUTE POSITION -->
+        <div class="sign-up-wrapper">
+            <form>
                 <h1>Create Account</h1>
+                <h4>And enjoy life during the time you travel with us!</h4>
                 <div class="input-group">
                     <div class="input-group__group">
-                        <label for="sign-up-name">Full name</label>
-                        <input type="text" placeholder="Enter your full name" id="full-name">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="input-group__group content">
+                            <label for="sign-up-name">Full name</label>
+                            <input type="text" placeholder="Enter your full name" id="full-name">
+                        </div>
                     </div>
 
                     <div class="input-group__group">
-                        <label for="sign-up-email">Email</label>
-                        <input type="email" placeholder="Enter your email" id="email">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="input-group__group content">
+                            <label for="sign-up-email">Email</label>
+                            <input type="email" placeholder="Enter your email" id="email">
+                        </div>
+                    </div>
+
+                    <div class="input-group__group phone grid-col-span-2">
+                        <i class="fa-solid fa-phone"></i>
+                        <!-- Dropdown for country code -->
+                        <div class="input-group__group content">
+                            <label for="sign-up-phone-number">Mobile number</label>
+                            <input type="number" placeholder="Enter mobile number" id="phone-number">
+                        </div>
+                    </div>
+
+                    <div class="input-group__group date grid-col-span-2">
+                        <i class="fa-regular fa-calendar"></i>
+                        <div class="input-group__group content">
+                            <label for="sign-up-birth-date">Birth date</label>
+                            <input type="date" placeholder="Enter your birth date" id="birth-date">
+                        </div>
                     </div>
 
                     <div class="input-group__group">
-                        <label for="sign-up-pass">Password</label>
-                        <input type="password" placeholder="Enter your password" id="password">
+                        <i class="fa-solid fa-lock"></i>
+                        <div class="input-group__group content">
+                            <label for="sign-up-pass">Password</label>
+                            <input type="password" placeholder="Enter password" id="password">
+                        </div>
                     </div>
 
                     <div class="input-group__group">
-                        <label for="sign-up-confirm-pass">Confirm Password</label>
-                        <input type="password" placeholder="Confirm your password" id="confirm-password">
+                        <i class="fa-solid fa-lock"></i>
+                        <div class="input-group__group content">
+                            <label for="sign-up-confirm-pass">Confirm Password</label>
+                            <input type="password" placeholder="Confirm password" id="confirm-password">
+                        </div>
                     </div>
 
-                    <div class="input-group__group">
-                        <label for="sign-up-gender">Gender</label>
-                        <input type="text" placeholder="Enter your gender" id="gender">
-                    </div>
+                    <label for="terms-of-services" class="grid-col-span-2">
+                    <input type="checkbox" class="grid-col-span-2"> I have read and accepted <a>Terms of services</a> and <a>Privacy policy</a></label>
 
-                    <div class="input-group__group">
-                        <label for="sign-up-birth-date">Birth date</label>
-                        <input type="date" placeholder="Enter your birth date" id="birth-date">
-                    </div>
-
-                    <div class="input-group__group">
-                        <label for="sign-up-phone-number">Phone number</label>
-                        <input type="number" placeholder="Enter your phone number" id="phone-number">
-                    </div>
-
-                    <button type="checkbox">I have read and accepted <bold>Terms of services</bold> and <bold>Privacy policy</bold></button>
-                    <button type="submit">Sign Up</button>
+                    <button type="submit" class="grid-col-span-2">Create an account</button>
                 </div>
 
-                <h4>Already have an account? <a href="#"><bold>Login</bold></a></h4>
-                <h5>Or sign up with</h5>
-                
-                <div class="social">
-                    <div>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                    </div>
-                    <div>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <div>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div>
-                        <a href="#"><i class="fab fa-google"></i></a>
-                    </div>
-                    <div>
-                        <a href="#"><i class="fab fa-apple"></i></a>
+                <div class="alternative-log-in">
+                    <h4 id="signin">Already have an account? <a href="#"><bold>Login</bold></a></h4>
+                    
+                    <div class="line"></div>
+                    <h5>Or log in with</h5>
+                    
+                    <div class="social">
+                        <div>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                        
+                        <div>
+                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="Pictures/google.png" alt="google-logo"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="Pictures/apple-logo.png" alt="apple-logo"></a>
+                        </div>
                     </div>
                 </div>
             </form> 
         </div>
+    
         <div class="sign-in-wrapper">
             <form>
-                <h1>Sign In</h1>
-                <div class="input-group">
-                    <div class="input-group__group">
-                        <label for="sign-in-email">Email</label>
-                        <input type="email" placeholder="Enter your email" id="log-in-email">
+                <h1>Welcome back</h1>
+                <div class="input-group log-in">
+                    <div class="input-group__group grid-col-span-2">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div class="input-group__group content">
+                            <label for="sign-up-email">Email</label>
+                            <input type="email" placeholder="Enter your email">
+                        </div>
                     </div>
-                    <div class="input-group__group">
-                        <label for="sign-in-password">Email</label>
-                        <input type="password" placeholder="Enter your password" id="log-in-password">
+                    <div class="input-group__group grid-col-span-2">
+                        <i class="fa-solid fa-lock"></i>
+                        <div class="input-group__group content">
+                            <label for="sign-up-pass">Password</label>
+                            <input type="password" placeholder="Enter password" id="log-in-password">
+                        </div>
                     </div>
-                    <button type="checkbox">Keep me logged in</button>
-                    <button type="submit">Log in now</button>
+                    <div class="keep-logged-in">
+                        <label for="keep-logged-in"><input type="checkbox" id="keep-logged-in"> Keep me logged in</label>
+                    </div>
+                    <div ><a href="#">Forgot password?</a></div>
+                    
+                    <button type="submit" class="grid-col-span-2">Log in now</button>
                 </div>
 
-                <a href="#">Forgot password?</a>
-                <h4>Or sign in with</h4>
+                
+                <h4>Or sign in with:</h4>
                 
                 <div class="social">
                     <div>
                         <a href="#"><i class="fab fa-facebook"></i></a>
                     </div>
+                    
                     <div>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                     </div>
                     <div>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><img src="Pictures/google.png" alt="google-logo"></a>
                     </div>
                     <div>
-                        <a href="#"><i class="fab fa-google"></i></a>
-                    </div>
-                    <div>
-                        <a href="#"><i class="fab fa-apple"></i></a>
+                        <a href="#"><img src="Pictures/apple-logo.png" alt="apple-logo"></a>
                     </div>
                 </div>
             </form>
         </div>
+
         <div class="overlay">
             <div class="overlay-left">
-                <h1>Welcome Back!</h1>
                 <img src="/Pictures/Locomotive-log-in.jpg" alt="Locomotive-log-in">
-                <p>To keep connected with us please login with your personal info</p>
-                <button class="overlay-btn" id="signin">Sign In</button>
             </div>
             <div class="overlay-right">
-                <h1>Hello, Friend!</h1>
                 <img src="/Pictures/Locomotive-sign-up.png" alt="Locomotive-sign-up">
                 <p>Enter your personal details and start journey with us</p>
                 <button class="overlay-btn" id="signup">Sign Up</button>
             </div>
         </div>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

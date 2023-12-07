@@ -28,7 +28,7 @@ body{
 }
 
 a {    
-  text-decoration: none;
+    text-decoration: none;
     color: #000;
     font-size: 1rem;
 }
@@ -134,7 +134,7 @@ nav .toggle-btn{
     text-align: left;
 }
 
-/* BOOK TICKET */
+/* BOOK TICKET FORM */
 .form-booking {
     --_form-width: min(100%, 75%);
     box-sizing: border-box;
