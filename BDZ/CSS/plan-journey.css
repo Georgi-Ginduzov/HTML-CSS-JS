@@ -1,0 +1,96 @@
+.train-schedule{
+    margin: 30px auto;
+    padding: 70px 50px;
+    
+}
+
+/* Depart from info */
+.depart-from{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 40px;
+}
+
+.depart-from h3{
+    color: rgb(100,115,134);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.depart-from h2{
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+.depart-from h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Train route box */
+.train-schedule_route-box{
+    margin: 10px 0;
+    padding: 18px 12px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    background-color: rgb(255,255,255);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    transition: all 1s;
+}
+
+.train-schedule_route-box:hover{
+    scale: 1.03;
+}
+
+.time-and-delay{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.train-delay{
+    margin-left: 8px;
+    color: green;
+}
+
+.final-destination{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.final-destination span{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.route-duration-details{
+    display: flex;
+    flex-direction: row;
+
+    margin: 10px 0px 20px;
+}
+
+.duration,
+    .route-stops,
+        .route-company,
+            .journey-details{
+        font-weight: 500;
+}
+
+/* Train route details */
+.route-details{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: flex-end;
+}
