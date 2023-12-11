@@ -191,7 +191,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 }
 
-
 .book-ticket:has(select) {
   gap: 1em;
 }
@@ -216,102 +215,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font: inherit;
 }
 
-/*  Train schedule */  
-.train-schedule{
-    margin: 30px auto;
-    padding: 70px 50px;
-    
-}
-
-/* Depart from info */
-.depart-from{
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 40px;
-}
-
-.depart-from h3{
-    color: rgb(100,115,134);
-    font-weight: 800;
-    font-size: 1.5rem;
-}
-
-.depart-from h2{
-    font-size: 2rem;
-    padding: 10px 0;
-}
-
-.depart-from h4{
-    font-size: 1.2rem;
-    font-weight: 400;
-}
-
-/* Train route box */
-.train-schedule_route-box{
-    margin: 10px 0;
-    padding: 18px 12px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    background-color: rgb(255,255,255);
-    cursor: pointer;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: space-between;
-    transition: all 1s;
-}
-
-.train-schedule_route-box:hover{
-    scale: 1.03;
-}
-
-.time-and-delay{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.train-delay{
-    margin-left: 8px;
-    color: green;
-}
-
-.final-destination{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.final-destination span{
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-.route-duration-details{
-    display: flex;
-    flex-direction: row;
-
-    margin: 10px 0px 20px;
-}
-
-.duration,
-    .route-stops,
-        .route-company,
-            .journey-details{
-        font-weight: 500;
-}
-
-/* Train route details */
-.route-details{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-end;
+.btn-submit a{
+    color: #E6EAEB; 
 }
 
 /* DROPDOWN MENU */
@@ -348,6 +253,123 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     justify-content: center;
 }
 
+/* Indent top stories */
+.indent-top-stories{
+    height: 100px;
+
+    background-color: rgb(246,248,250);
+}
+
+/* Top Stories */
+.top-stories{
+    padding: 80px 0;
+    margin: 60px 0px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    background-color: #fff;
+}
+
+.top-stories h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+
+    border-bottom: 8px solid red;
+}
+
+.top-stories h4{
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.top-stories_stories {
+    display: grid;
+    grid-auto-flow: row;    
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    grid-template: 
+    "top-news top-news top-news";
+    grid-gap: 1rem;
+
+    margin: 2px auto;
+}
+
+.top-stories_stories-story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+ 
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    transition: all 1s;
+}
+
+.top-stories_stories-story img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+
+    object-fit: cover;
+}
+
+.top-stories_stories-story button{
+    width: 30px;
+    height: 30px;
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(252,194,72);
+    transform: translateY(-20px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.top-stories_stories-story:hover{
+    scale: 1.03;/* add smooth scale */
+}
+
+.top-stories_stories-story_text{
+    padding: 2.5rem;
+
+    text-align: center;
+}
+
+.top-stories_stories-story_text h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* More information */
+.more-information{
+    padding: 60px 0;
+    margin: 60px 0px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+
+    background-color: rgb(246,248,250);
+}
+
 /* RESPONSIVE DESIGN*/ 
 @media(max-width: 922px){
     nav .links,
@@ -362,10 +384,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .dropdown-menu{
         display: block;
     }
+
+    .top-stories_stories{
+        grid-template:
+        "top-news top-news";
+    }
 }
 
 @media (max-width: 576px) {
     .dropdown-menu {
         left: 2rem;
+    }
+
+    .top-stories_stories{
+        grid-template:
+        "top-news";
     }
 }
