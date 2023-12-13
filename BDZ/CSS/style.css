@@ -275,21 +275,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: #fff;
 }
 
-.top-stories h2{
+h2{
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 1rem;
     margin-bottom: 1.5rem;
 
-    border-bottom: 8px solid red;
+    border-bottom: 8px solid rgb(10,93,159);
 }
 
-.top-stories h4{
+h4{
     font-weight: 400;
     margin-bottom: 40px;
 }
 
-.top-stories_stories {
+.stories {
     display: grid;
     grid-auto-flow: row;    
     justify-content: center;
@@ -302,20 +302,20 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin: 2px auto;
 }
 
-.top-stories_stories-story{
+.stories-story{/* To do */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     cursor: pointer;
- 
+    
     max-width: 350px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     transition: all 1s;
 }
 
-.top-stories_stories-story img{
+.stories-story img{
     width: 100%;
     height: 300px;
     border-radius: 10px 10px 0 0;
@@ -323,7 +323,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     object-fit: cover;
 }
 
-.top-stories_stories-story button{
+.stories-story button{
     width: 30px;
     height: 30px;
     padding: 20px;
@@ -339,20 +339,25 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
 }
 
-.top-stories_stories-story:hover{
-    scale: 1.03;/* add smooth scale */
+.stories-story:hover{
+    scale: 1.03;
 }
 
-.top-stories_stories-story_text{
+.stories-story_text{
     padding: 2.5rem;
 
     text-align: center;
 }
 
-.top-stories_stories-story_text h3{
+.stories-story_text h3{
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+}
+
+.stories-story_text h4{
+    font-weight: 400;
+    margin-bottom: 40px;
 }
 
 /* More information */
@@ -370,6 +375,113 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     background-color: rgb(246,248,250);
 }
 
+/* Discover more */
+.discover-more{
+    padding: 30px 68px 0;    
+    margin: 0px auto;
+    background-color: white;
+}
+
+.discover-more.wrapper{
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    max-width: 1146px;
+    margin: 0 auto 87px;
+}
+
+.discover-more_box{
+    position: relative;
+    width: 31.6%;
+    font-size: 1.8rem;
+    text-align: center;
+    /*background-color: #fff;*/
+    margin-bottom: 22px;
+    z-index: 2;
+}
+
+.discover-more_box:nth-child(4),
+.discover-more_box:nth-child(5),
+.discover-more_box:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.discover-more_box::before{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: 0;
+    display: block;
+    height: 206px;
+    border-radius: 9px;
+    width: 100%;
+    background-color: rgb(237,246,249);
+    z-index: -1;
+    transition: background .3s;
+}
+
+.discover-more_box a{
+    display: block;
+    padding-bottom: 20px;
+}
+
+.discover-more_box-img{
+    width: 52.8%;
+    margin: 0 auto 13px;
+    width: 120px;
+    height: 120px;
+
+    box-sizing: border-box;
+    background-color: white;
+    object-fit: cover;
+    transition: padding 0.3s;
+    
+}
+
+.discover-more_box img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 12px solid rgb(1,162,217);    
+}
+
+
+.discover-more_box img:hover{
+    scale: 0.90;
+}
+
+.discover-more_box h4{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: larger;
+    color: rgb(0,70,126);
+
+    display: block;
+}
+
+.discover-more_box span{
+    color: rgb(3,72,127);
+}
+
+.discover-more_box-additional-info{
+    background-color: red;
+    min-width: 30%;
+}
+
+.discover-more_box-additional-info{
+    width: 31.6%;
+}
+
+/* FOOTER */
+footer{
+    background-color: rgb(10,93,159);
+}
+
 /* RESPONSIVE DESIGN*/ 
 @media(max-width: 922px){
     nav .links,
@@ -385,7 +497,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         display: block;
     }
 
-    .top-stories_stories{
+    .stories_stories{
         grid-template:
         "top-news top-news";
     }
@@ -396,7 +508,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         left: 2rem;
     }
 
-    .top-stories_stories{
+    .stories_stories{
         grid-template:
         "top-news";
     }
