@@ -4,22 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Demo Page</title>
-        <link rel="stylesheet" href="/CSS/style.css">
         <script src="https://kit.fontawesome.com/41f3c968e1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/CSS/style.css">
     </head>
     <body>
         
-        <header class="header">
-        
+        <header class="header"> 
             <nav class="navbar" id="navbar">
                 <div class="logo"><a href="#">BG Railway</a></div>
 
                 <ul class="links">
                     <li><a href="/#index.html" class="current-page">Home</a></li>
-                    <li><a href="/#internatioinal-ticket">International Ticket</a></li>
-                    <li><a href="/#live-location">Live Location</a></li>
-                    <li><a href="/#trains">Trains</a></li>
-                    <li><a href="/#contact.html">Contact Us</a></li>
+                    <li><a href="/#live-location">Live Trains</a></li>
+                    <li><a href="/#trains">Status & disruptions</a></li>
                 </ul>
                 <a href="/log-in-register.html" class="action-btn">Log in</a>
                 <toggle class="toggle-btn">
@@ -63,7 +60,7 @@
             </div>
                     
             <div class="book-ticket">
-                <label for="coach" class="book-ticket__coach-label" id="coach_dropdown">Coach</label>
+                <label for="coach"  >Coach</label>
                 <select class="coach__options" >
                     <option value="standard-class">Standard</option>
                     <option value="first-class">First Class</option>
@@ -71,10 +68,6 @@
                     <option value="buffet-car">Buffet</option>
                     <option value="luggage-car">Luggage</option>
                 </select>
-                
-                <div class="icon-container">
-                    
-                </div>
             </div>
             
             <div class="book-ticket">
@@ -96,147 +89,236 @@
             </div>
         
         </form>
-    </header>
+        </header>
 
-    <main class="main">     
-        <div class="indent-top-stories"> </div> <!-- This is for the top stories to be under the header -->
-        <!-- Top Stories -->
+        <main class="main">     
+            <div class="indent-top-stories"> </div> <!-- This is for the top stories to be under the header -->
+            <!-- Top Stories -->
 
-        <section class="top-stories">
-            <h2>Top Stories</h2>
-            <h4>All the latest from National Rail.</h4>
-            <div class="stories">
-                <div class="stories-story">
-                    <img src="/Pictures/schedule-change-story.jpg" alt="schedule-change-story">
-                    <button class="btn-story"><i class="fa-solid fa-arrow-right"></i></button>
-                    <div class="stories-story_text">
-                        <h3 class="stories-story_tittle">New Schedule from 10.12.2023</h3>
-                        <h4 class="top-stories_stories-story_content">
-                            A small part of the schedule is going to be changed. This expects to lead to  improvement in the quality of the service.
-                        </h4>
+            <section class="top-stories">
+                <h2>Top Stories</h2>
+                <h4>All the latest from National Rail.</h4>
+                <div class="stories">
+                    <a href="#"><div class="stories-story">
+                        <img src="/Pictures/schedule-change-story.jpg" alt="schedule-change-story">
+                        <button class="btn-story"><i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="stories-story_text">
+                            <h3 class="stories-story_tittle">New Schedule from 10.12.2023</h3>
+                            <h4 class="top-stories_stories-story_content">
+                                A small part of the schedule is going to be changed. This expects to lead to  improvement in the quality of the service.
+                            </h4>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="stories-story">
+                        <img src="/Pictures/Locomotive-log-in.jpg" alt="schedule-change-story">
+                        <button class="btn-story"><i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="stories-story_text">
+                            <h3 class="stories-story_tittle">Christmas Steam Locomotive Rides</h3>
+                            <h4 class="stories-story_content">
+                                We've planned some Christmas steam train trips from Sofia to Pernik and Sofia to Bankya with themed carriages and schedules.
+                            </h4>
+                        </div>
                     </div>
+                    </a>
+                    <a href="#"><div class="stories-story">
+                        <img src="/Pictures/new-upholstered-seats-top-news.jpg" alt="schedule-change-story">
+                        <button class="btn-story"><i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="stories-story_text">
+                            <h3 class="stories-story_tittle">20 carriages with new upholstered seats</h3>
+                            <h4 class="stories-story_content">
+                                Discover enhanced travel experiences as 20 newly refurbished train cars, featuring upgraded upholstered seats, are set to journey across Bulgaria.
+                            </h4>
+                        </div>
+                    </div></a>
                 </div>
-                <div class="stories-story">
-                    <img src="/Pictures/Locomotive-log-in.jpg" alt="schedule-change-story">
-                    <button class="btn-story"><a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
-                    <div class="stories-story_text">
-                        <h3 class="stories-story_tittle">Christmas Steam Locomotive Rides</h3>
-                        <h4 class="stories-story_content">
-                            We've planned some Christmas steam train trips from Sofia to Pernik and Sofia to Bankya with themed carriages and schedules.
-                        </h4>
-                    </div>
-                </div>
-                <div class="stories-story">
-                    <img src="/Pictures/new-upholstered-seats-top-news.jpg" alt="schedule-change-story">
-                    <button class="btn-story"><a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
-                    <div class="stories-story_text">
-                        <h3 class="stories-story_tittle">20 carriages with new upholstered seats</h3>
-                        <h4 class="stories-story_content">
-                            Discover enhanced travel experiences as 20 newly refurbished train cars, featuring upgraded upholstered seats, are set to journey across Bulgaria.
-                        </h4>
-                    </div>
-                </div>
-            </div>
 
-        </section>  
-        
-      <section class="more-information">
-            <h2>More information</h2>
-            <h4>Learn more about National Rails goals and services.</h4>
-            <div class="stories">
-                <div class="stories-story">
-                    <img src="/Pictures/more-info-school.jpeg" alt="schedule-change-story">
-                    <button class="btn-story"><i class="fa-solid fa-arrow-right"></i></button>
-                    <div class="stories-story_text">
-                        <h3 class="stories-story_tittle">Four new spacialties in 4 Vocational schools</h3>
-                        <h4 class="stories-story_content">
-                            Discover the excitement as four professional high schools launch a new academic year with cutting-edge railroad technology programs, offering students specialized training.
-                        </h4>
-                    </div>
-                </div>
-                <div class="stories-story">
-                    <img src="/Pictures/more-info-new-luggage-cars.jpg" alt="schedule-change-story">
-                    <button class="btn-story"><a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
-                    <div class="stories-story_text">
-                        <h3 class="stories-story_tittle">BDZ will provide coaches for luggage for bicycle competition "Dunav ultra"</h3>
-                        <h4 class="stories-story_content">Embark on a cycling adventure with BDZ's added bike transport, as enthusiasts gather for the 10th edition of "Dunav ultra".
-                        </h4>
-                    </div>
-                </div>
-                <div class="stories-story">
-                    <img src="/Pictures/more-info-kuklen-professional-school-specialty-agreement.jpg" alt="schedule-change-story">
-                    <button class="btn-story"><a href="#"><i class="fa-solid fa-arrow-right"></i></a></button>
-                    <div class="stories-story_text">
-                        <h3 class="stories-story_tittle">BDZ and NKZI Collaborate to Pioneer Railway Education in Kuklen Professional High School</h3>
-                        <h4 class="stories-story_content">
-                            "Bulgarian State Railways (БДЖ) and the National Confederation of Industrial Employers (НКЖИ) have forged an agreement to establish a railway-focused program in a professional high school in Kuklen.
-                        </h4>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
+            </section>  
             
-        <section class="discover-more">
-            <!-- tips for using train services, route/station info -->
-            <h2>Discover more</h2>
-            <div class="discover-more wrapper">
-            <div class="discover-more_box">
-                <a href="">
-                    <div class="discover-more_box-img">
-                        <img src="/Pictures/discover-more-elements/1198_Skoda-68E_044-088-0-removebg-preview.jpg" alt="schedule-change-story">
+            <section class="more-information">
+                <h2>More information</h2>
+                <h4>Learn more about National Rails goals and services.</h4>
+                <div class="stories">
+                    <a href="#"><div class="stories-story">
+                        <img src="/Pictures/more-info-school.jpeg" alt="schedule-change-story">
+                        <button class="btn-story"><i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="stories-story_text">
+                            <h3 class="stories-story_tittle">Four new spacialties in 4 Vocational schools</h3>
+                            <h4 class="stories-story_content">
+                                Discover the excitement as four professional high schools launch a new academic year with cutting-edge railroad technology programs, offering students specialized training.
+                            </h4>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="stories-story">
+                        <img src="/Pictures/more-info-new-luggage-cars.jpg" alt="schedule-change-story">
+                        <button class="btn-story"><i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="stories-story_text">
+                            <h3 class="stories-story_tittle">BDZ will provide coaches for luggage for bicycle competition "Dunav ultra"</h3>
+                            <h4 class="stories-story_content">Embark on a cycling adventure with BDZ's added bike transport, as enthusiasts gather for the 10th edition of "Dunav ultra".
+                            </h4>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="stories-story">
+                        <img src="/Pictures/more-info-kuklen-professional-school-specialty-agreement.jpg" alt="schedule-change-story">
+                        <button class="btn-story"><i class="fa-solid fa-arrow-right"></i></button>
+                        <div class="stories-story_text">
+                            <h3 class="stories-story_tittle">BDZ and NKZI Collaborate to Pioneer Railway Education in Kuklen Professional High School</h3>
+                            <h4 class="stories-story_content">
+                                "Bulgarian State Railways (БДЖ) and the National Confederation of Industrial Employers (НКЖИ) have forged an agreement to establish a railway-focused program in a professional high school in Kuklen.
+                            </h4>
+                        </div>
+                    </div></a>
+                </div>
+
+
+            </section>
+                
+            <section class="discover-more">
+                <!-- tips for using train services, route/station info -->
+                <h2>Discover more</h2>
+                <div class="discover-more wrapper">
+                <div class="discover-more_box">
+                    <a href="">
+                        <div class="discover-more_box-img">
+                            <img src="/Pictures/discover-more-elements/1198_Skoda-68E_044-088-0-removebg-preview.jpg" alt="schedule-change-story">
+                        </div>
+                        <h4><span>> </span>Tips for using BDZ</h4>
+                    </a>
+                </div>
+                <div class="discover-more_box">
+                    <a href=""><div class="discover-more_box-img"><img src="/Pictures/discover-more-elements/1198_Skoda-68E_044-088-0-removebg-preview.jpg" alt="schedule-change-story">
                     </div>
-                    <h4><span>> </span>Tips for using BDZ</h4>
-                </a>
-            </div>
-            <div class="discover-more_box">
-                <a href=""><div class="discover-more_box-img"><img src="/Pictures/discover-more-elements/1198_Skoda-68E_044-088-0-removebg-preview.jpg" alt="schedule-change-story">
+                    <h4><span>> </span>Buy a ticket</h4>
+                    </a>
                 </div>
-                <h4><span>> </span>Buy a ticket</h4>
-                </a>
-            </div>
-            <div class="discover-more_box">
-                <a href=""><div class="discover-more_box-img"><img src="/Pictures/discover-more-elements/1198_Skoda-68E_044-088-0-removebg-preview.jpg" alt="schedule-change-story">
+                <div class="discover-more_box">
+                    <a href=""><div class="discover-more_box-img"><img src="/Pictures/discover-more-elements/1198_Skoda-68E_044-088-0-removebg-preview.jpg" alt="schedule-change-story">
+                    </div>
+                    <h4><span>> </span>Tickets</h4>
+                    </a>
                 </div>
-                <h4><span>> </span>Tickets</h4>
-                </a>
-            </div>
-            <div class="discover-more_box">
-                <a href=""><div class="discover-more_box-img"><img src="/Pictures/discover-more-elements/1198_Skoda-68E_044-088-0-removebg-preview.jpg" alt="schedule-change-story">
+                <div class="discover-more_box">
+                    <a href=""><div class="discover-more_box-img"><img src="/Pictures/discover-more-elements/1198_Skoda-68E_044-088-0-removebg-preview.jpg" alt="schedule-change-story">
+                    </div>
+                    <h4><span>> </span>Train map</h4>
+                    </a>
                 </div>
-                <h4><span>> </span>Train map</h4>
-                </a>
-            </div>
-            <div class="discover-more_box">
-                <a href=""><div class="discover-more_box-img"><img src="/Pictures/discover-more-elements/1198_Skoda-68E_044-088-0-removebg-preview.jpg" alt="schedule-change-story">
+                <div class="discover-more_box">
+                    <a href=""><div class="discover-more_box-img"><img src="/Pictures/discover-more-elements/1198_Skoda-68E_044-088-0-removebg-preview.jpg" alt="schedule-change-story">
+                    </div>
+                    <h4><span>> </span>Help and assistance</h4>
+                    </a>
                 </div>
-                <h4><span>> </span>Help and assistance</h4>
-                </a>
-            </div>
-            <div class="discover-more_box-additional-info">
-                <div class="discover-more_box-additional-info_fare-transfer-search">
+                <div class="discover-more_box-additional-info">
+                    <div class="discover-more_box-additional-info_fare-transfer-search">
 
-                </div>
-                <div class="discover-more_box-additional-info_handy-guide">
+                    </div>
+                    <div class="discover-more_box-additional-info_handy-guide">
 
+                    </div>
                 </div>
             </div>
-        </div>
-        </section>
+            </section>
         
-    </main>
+        </main>
 
-    <footer>
-        <div class="footer-wrapper">
-            <h3>Inquires</h3>
-            <button class="btn-footer">FAQ</button>
-        </div>
-        <div class="footer-nav">
+        <footer>
+            <div class="container">
+                <div class="footer-contacts">
+                    <div class="footer-contacts_box">
+                        <h3>Follow Us</h3>
+                        <button class="btn-footer">Lost & Found</button>
+                        <a href="https://www.facebook.com/BulgarianRailway/">
+                            <i class="fab fa-facebook"></i>
+                            Bulgarian Railway
+                        </a>
+                        <a href="tel:+35929311111">
+                            <i class="fa-solid fa-phone"></i>
+                            02 931 11 11
+                        </a>
+                        <a href="https://www.facebook.com/BulgarianRailway/">
+                            <i class="fa-solid fa-comment"></i>
+                            Reports and complaints
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-faq">
+                    <div class="faq-container">
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="wrapper">
+                        <div class="wrapper-item">
+                            <button id="accordion-button-1" aria-expanded="false">
+                            <span class="wrapper-title">Train ticket purchases</span>
+                            <span class="icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="wrapper-content">
+                                <p>
+                                Tickets can be purchased from all serviced railway stations and ticket offices in the country, as well as <a>online</a>.</p>
+                                <p>
+                                The sale of tickets at the box office stops 5 minutes before the departure of the train. The online sale of tickets is carried out no later than 3 hours before the departure of the train.</p>
+                                <p>
+                                From non-served stations where there are no ticket offices, ticket sales are carried out by the transport staff on the train.
+                                The price of the ticket in the train from a serviced station is higher than the price of the transport document from the ticket office, according to the Tariff for the carriage of passengers and hand luggage by rail in an internal message.</p>
+                            </div>
+                        </div>
+                        <div class="wrapper-item">
+                            <button id="accordion-button-2" aria-expanded="false">
+                            <span class="wrapper-title">Travelling with international trains</span>
+                            <span class="icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="wrapper-content">
+                            <p>
+                                For international train travel, BDZ customers can obtain information from the International Ticketing and Tourism Offices.  
+                            </p>
+                            </div>
+                        </div>
+                        <div class="wrapper-item">
+                            <button id="accordion-button-3" aria-expanded="false">
+                            <span class="wrapper-title">Forgotten luggage</span>
+                            <span class="icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="wrapper-content">
+                            <p>
+                                When a passenger reports forgotten luggage at the stations or on the train, the station (train) staff searches for the luggage.
+    
+                                Found luggage is handed over against payment of the price corresponding to 1/2 ticket for the kilometer distance.
+    
+                                To search the luggage, the passenger pays BGN 2.00.
+    
+                                You can report forgotten luggage to the national information telephone number 02/931 11 11.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="wrapper-item">
+                            <button id="accordion-button-4" aria-expanded="false">
+                            <span class="wrapper-title">Complaints and refunds</span>
+                            <span class="icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="wrapper-content">
+                            <p>
+                                Amounts for fully or partially unused tickets and subscription cards can be reimbursed by customers according to the specified <a href="https://www.bdz.bg/bg/a/reklamatsii-i-vzstanovyavane-na-sumi">complaint procedure</a>.
+                            </p>
+                            </div>
+                        </div>
+                        <div class="wrapper-item">
+                            <button id="accordion-button-5" aria-expanded="false">
+                            <span class="wrapper-title">Smoking in trains</span>
+                            <span class="icon" aria-hidden="true"></span>
+                            </button>
+                            <div class="wrapper-content">
+                            <p>
+                                Smoking is prohibited in all categories of passenger trains.
+    
+                                The penalty for violating the smoking ban on trains is BGN 20.35.
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-        </div>
-    </footer>
-
+    <script src="/js/faq-accordion-btn.js"></script>
     <script>
         const toggleBtn = document.querySelector('.toggle-btn');
         const toggleBtnIcon = document.querySelector('.toggle-btn i');
@@ -259,4 +341,4 @@
     </script>
 
     </body>
-</html>.
+</html>
