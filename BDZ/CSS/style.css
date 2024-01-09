@@ -36,7 +36,7 @@ a {
 
 a:hover{
     color: orange;
-    transition-delay: .3;
+    transition-delay: .3s;
 }
 
 /* HEADER */
@@ -104,7 +104,7 @@ nav .toggle-btn{
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease;
+    transition: scale 0.2s ease;
 }
 
 .action-btn:hover{
@@ -131,7 +131,7 @@ nav .toggle-btn{
 
 .hero p {
     font-size: clamp(1.125rem, 1.0113rem + 0.5685vw, 1.6875rem);
-    margin-bottom: 0.7eem;
+    margin-bottom: 0.7em;
     text-align: left;
 }
 
@@ -307,13 +307,14 @@ h4{
     justify-items: center;
     align-content: center;
     grid-template: 
-    "top-news top-news top-news";
+    "stories-story   stories-story stories-story";
     grid-gap: 1rem;
 
     margin: 2px auto;
 }
 
 .stories-story{
+    grid-area: stories-story;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -494,7 +495,7 @@ h4{
 /* FOOTER */
 footer{
     background-color: rgb(10,93,159);
-    padding: 1.5rem 3rem 1.5rem 1,5rem;
+    padding: 1.5rem 3rem 1.5rem 1.5rem;
     color: #fff;
     font-size:larger;
 
@@ -521,7 +522,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: left;
+    align-items: start;
 }
 
 footer h3{
@@ -660,7 +661,7 @@ footer a{
 
     .stories_stories{
         grid-template:
-        "top-news top-news";
+        "stories-story stories-story";
     }
 }
 
@@ -671,6 +672,6 @@ footer a{
 
     .stories_stories{
         grid-template:
-        "top-news";
+        "stories-story";
     }
 }
