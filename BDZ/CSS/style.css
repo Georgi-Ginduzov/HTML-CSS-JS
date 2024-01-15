@@ -202,22 +202,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font: inherit;
 }
 
-.coach__options{
-    appearance: none;
-}
-
-select::after{
-    content: '\f238';/* f238 is the unicode for the caret-down icon */
-    
-    position: absolute;
-    font-size: 1rem;
-    top: 3px;
-    right: 0px;
-    
-    height: 10px;
-}
-
-
 .btn-submit {
     background-color: rgb(23,143,114);
     border-radius: 10px;
@@ -229,6 +213,7 @@ select::after{
 
 .btn-submit a{
     color: #E6EAEB; 
+    display: block;
 }
 
 /* DROPDOWN MENU */
