@@ -7,7 +7,37 @@
     <link rel="stylesheet" href="CSS/plan-journey.css">
 </head>
 <body>
+    <!-- Add navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="navbar__links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="plan-journey.html">Plan Journey</a></li>
+                    <li><a href="train-schedule.html">Train Schedule</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1 class="heading-primary">
+            We hope you have an amazing journey!
+        </h1>
+
+        <div class="date-and-time">
+            <h2 id="date"></h2>
+            <h2 id="time"></h2>
+        </div>
+
+        <!-- Searching form -->
+        </header>
+
+
     <main class="main">     
+
+
 
         <!-- Train Schedule -->
         <section class="train-schedule" id="train-schedule">
@@ -80,7 +110,7 @@
                         Platform -
                     </h4>
                     <h4 class="journey-details">
-                        Journey Details -->
+                        Journey Details
                     </h4>
                 </div>
                 
@@ -88,5 +118,7 @@
             
         </section>
     </main>
+    <script src="/js/date-time.js"></script>
+
 </body>
 </html>
