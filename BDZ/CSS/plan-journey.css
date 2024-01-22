@@ -1,3 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(/Pictures/night-sofia2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    width: 100%;
+    
+    color: rgb(255,255,255);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+
+    padding: 1rem 2rem;
+}
+
+.navbar__links{
+    display: flex;
+    flex-direction: row;
+    color: rgb(255,255,255);
+}
+
+h1, .date-and-time{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 5rem 5rem 0;
+}
+
+.date-and-time{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.date-and-time h2{
+    font-size: 1.6rem;
+    padding-left: 2rem;
+}
+
+h2{
+    margin-top: 10rem;
+}
+
+
+
 .train-schedule{
     margin: 30px auto;
     padding: 70px 50px;
