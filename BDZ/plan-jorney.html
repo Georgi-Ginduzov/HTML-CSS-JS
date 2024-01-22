@@ -9,30 +9,28 @@
 <body>
     <!-- Add navbar -->
     <header>
-        <nav class="navbar">
-            <div class="navbar__logo">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            
-            <ul class="navbar__links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="plan-journey.html">Plan Journey</a></li>
-                <li><a href="train-schedule.html">Train Schedule</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
+        <nav class="navbar" id="navbar">
+            <div class="logo"><a href="#">BG Railway</a></div>
+
+            <ul class="links">
+                <li><a href="/#index.html" class="current-page">Home</a></li>
+                <li><a href="/#live-location">Live Trains</a></li>
+                <li><a href="/#trains">Status & disruptions</a></li>
             </ul>
             <a href="/log-in-register.html" class="action-btn">Log in</a>
-                <toggle class="toggle-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </toggle>
+            <toggle class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </toggle>
         </nav>
         <h1 class="heading-primary">
-            We hope you have an amazing journey!
+            Have an amazing journey!
         </h1>
 
         <div class="date-and-time">
             <h2 id="date"></h2>
             <h2 id="time"></h2>
         </div>
+        <div class="weather" id="temp">Weather</div>
         <h2>Frequently seen</h2>
         <!-- Searching form -->
         </header>
@@ -122,6 +120,6 @@
         </section>
     </main>
     <script src="/js/date-time.js"></script>
-
+    <script src="/js/weather.js"></script>
 </body>
 </html>

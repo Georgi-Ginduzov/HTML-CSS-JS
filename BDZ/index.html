@@ -15,7 +15,7 @@
 
                 <ul class="links">
                     <li><a href="/#index.html" class="current-page">Home</a></li>
-                    <li><a href="/#live-location">Live Trains</a></li>
+                    <li><a href="/plan-jorney.html">Live Trains</a></li>
                     <li><a href="/#trains">Status & disruptions</a></li>
                 </ul>
                 <a href="/log-in-register.html" class="action-btn">Log in</a>
@@ -43,10 +43,10 @@
             </section>
 
         <!-- Form for booking a ticket -->  
-        <form class="form-booking">
+        <form class="form-booking" id="train-submission-form">
             <div class="book-ticket">
                 <label for="depart-from">From</label>
-                <input type="text" placeholder="Depart" id="depart-from">
+                <input type="text" placeholder="Depart" id="depart-from-city">
             </div>
 
             <div class="book-ticket">
@@ -86,8 +86,8 @@
             
             <div class="book-ticket">
                 <button type="submit" class="btn-submit" id="search-train">
-                    <a href="/plan-jorney.html">Search</a>
-                </button><!-- <a href="/plan-jorney.html"> -->
+                    Search
+                </button>
             </div>
         
         </form>
@@ -341,6 +341,7 @@
         // Set the minimum date for the input field
         document.getElementById('date').setAttribute('min', currentDate);
     </script>
+    <script src="/js/weather-redirect.js"></script>
 
     </body>
 </html>

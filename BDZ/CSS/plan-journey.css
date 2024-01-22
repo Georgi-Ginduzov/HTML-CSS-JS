@@ -9,13 +9,15 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
     
     width: 100%;
     
     color: rgb(255,255,255);
 }
 
-.navbar{
+/* .navbar{
     display: flex;
     justify-content: space-between;
     align-content: space-between;
@@ -25,8 +27,77 @@ header{
 
 .navbar__links{
     display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     flex-direction: row;
     color: rgb(255,255,255);
+} */
+
+nav{    
+    width: 100%;
+    padding: 1em 2em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .logo a{ 
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* CHANGE COLOUR ON BACKGROUND AND TEXT ON FOCUS*/
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav li{
+    text-decoration: none;
+}
+
+nav .current-page{
+    text-decoration: underline;
+}
+
+nav .links{
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    gap: 2em;
+}
+
+nav .toggle-btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn{
+    background-color: rgb(245, 64, 64);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+
+.action-btn:hover{
+    scale: 1.05;
+}
+
+.action-btn:active{
+    scale: 0.95;
 }
 
 h1, .date-and-time{
@@ -38,20 +109,14 @@ h1{
     font-size: 3rem;
     font-weight: 800;
     padding: 5rem 5rem 0;
-}
 
-.date-and-time{
-    margin: 0 auto;
-    padding: 0;
+    text-align: center;
 }
 
 .date-and-time h2{
     font-size: 1.6rem;
+    padding-top: 2rem;
     padding-left: 2rem;
-}
-
-h2{
-    margin-top: 10rem;
 }
 
 
@@ -91,6 +156,16 @@ main{
 .depart-from h4{
     font-size: 1.2rem;
     font-weight: 400;
+}
+
+.weather {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 2rem 0;
+    font-size: 2rem;
 }
 
 /* Train route box */
@@ -159,4 +234,8 @@ main{
     flex-direction: column;
     justify-content: space-between;
     align-content: flex-end;
+}
+
+main{
+    background-color: sienna;
 }

@@ -209,6 +209,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border: none;
     color: #E6EAEB;
     font: inherit;
+    cursor: pointer;
 }
 
 .btn-submit a{
