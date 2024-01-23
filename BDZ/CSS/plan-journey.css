@@ -17,23 +17,6 @@ header{
     color: rgb(255,255,255);
 }
 
-/* .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-
-    padding: 1rem 2rem;
-}
-
-.navbar__links{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-direction: row;
-    color: rgb(255,255,255);
-} */
-
 nav{    
     width: 100%;
     padding: 1em 2em;
@@ -58,7 +41,7 @@ nav a{
 }
 
 nav li{
-    text-decoration: none;
+    list-style: none;
 }
 
 nav .current-page{
@@ -119,19 +102,108 @@ h1{
     padding-left: 2rem;
 }
 
+.form-booking {
+    --_form-width: min(80%, 50%);
+    box-sizing: border-box;
+    margin: 4rem auto;
+    background-color: rgb(253,253,253);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1em;
+    width: var(--_form-width);
+    padding: 1.25em;
+    border-radius: 20px;
+}
+
+.book-ticket {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    width: min(100%, 10vh);
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+.book-ticket > label{
+    font-size: clamp(1.2rem, 1.0394rem + 0.3032vw, 1.5rem);
+    font-weight: bold;
+    color: #4E535A;
+}
+
+.book-ticket > input{
+    width: 100%;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(243,250,248);
+    color: #7A7E82;
+    font: inherit;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+
+}
+
+ .passengers-count,
+ .coach__options{
+    padding: 1em .5em;
+
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(243,250,248);
+
+    font: inherit;
+}
+
+.btn-submit {
+    background-color: rgb(1,57,90);
+    border-radius: 10px;
+    padding: 1em 1.5em;
+    border: none;
+    color: #E6EAEB;
+    font: inherit;
+    cursor: pointer;
+}
+
+.btn-submit a{
+    color: #E6EAEB; 
+    display: block;
+}
 
 
-.train-schedule{
-    margin: 30px auto;
-    padding: 70px 50px;
-    
+.weather {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 2rem 0;
+    font-size: 2rem;
 }
 
 main{
-    width: 100%;
+    
+    background-color: rgb(246,248,250);
     
     display: flex;
     justify-content: center;
+}
+
+.train-schedule{
+    margin: 30px auto;
+    width: 60%;
 }
 
 /* Depart from info */
@@ -158,21 +230,12 @@ main{
     font-weight: 400;
 }
 
-.weather {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 0;
-    padding: 2rem 0;
-    font-size: 2rem;
-}
 
 /* Train route box */
 .train-schedule_route-box{
     margin: 10px 0;
     padding: 10px 12px;
-    width: 600px;
+    width: 100%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     background-color: rgb(255,255,255);
@@ -236,6 +299,156 @@ main{
     align-content: flex-end;
 }
 
-main{
-    background-color: sienna;
+/* Footer */
+footer{
+    background-color: rgb(10,93,159);
+    padding: 1.5rem 3rem 1.5rem 1.5rem;
+    color: #fff;
+    font-size:larger;
+
+    display: flex;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.footer-contacts_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+}
+
+footer h3{
+    margin-bottom: 1.5rem;
+}
+
+footer a{
+    color: #fff;
+    margin: .25rem 0;
+}
+
+.footer-contacts_box button{
+    margin-bottom: 1.5rem;
+    width: 80%;
+    padding: .5rem 1rem;
+}
+
+    /* FAQ */
+.footer-faq{
+    width: 50%;
+}
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0 1em .5em;
+}
+  
+.wrapper .wrapper-item {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+.wrapper .wrapper-item button[aria-expanded='true'] {
+    border-bottom: 1px solid #03b5d2;
+  }
+  
+.wrapper button {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+    padding: 1em 0;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+  }
+  
+.wrapper button:hover {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .wrapper button:hover::after {
+    cursor: pointer;
+    color: white;
+    border: 1px solid #03b5d2;
+  }
+  
+  .wrapper button .wrapper-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  
+  .wrapper button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  
+  .wrapper button .icon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .wrapper button .icon::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  
+  .wrapper button[aria-expanded='true'] {
+    color: white;
+  }
+  .wrapper button[aria-expanded='true'] .icon::after {
+    width: 0;
+  }
+  .wrapper button[aria-expanded='true'] + .wrapper-content {
+    opacity: 1;
+    max-height: 12em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .wrapper .wrapper-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+  }
+  .wrapper .wrapper-content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2em 0;
+  }
+
+  @media{max-width: ;}
