@@ -19,7 +19,7 @@
                         <i class="fa-regular fa-user"></i>
                         <div class="input-group__group content">
                             <label for="sign-up-name">Full name</label>
-                            <input type="text" placeholder="Enter your full name" id="full-name">
+                            <input type="text" placeholder="Enter your full name" id="sign-up-name">
                         </div>
                     </div>
 
@@ -27,7 +27,7 @@
                         <i class="fa-regular fa-envelope"></i>
                         <div class="input-group__group content">
                             <label for="sign-up-email">Email</label>
-                            <input type="email" placeholder="Enter your email" id="email">
+                            <input type="email" placeholder="Enter your email" id="sign-up-email">
                         </div>
                     </div>
 
@@ -36,7 +36,7 @@
                         <!-- Dropdown for country code -->
                         <div class="input-group__group content">
                             <label for="sign-up-phone-number">Mobile number</label>
-                            <input type="number" placeholder="Enter mobile number" id="phone-number">
+                            <input type="number" placeholder="Enter mobile number" id="sign-up-phone-number">
                         </div>
                     </div>
 
@@ -44,7 +44,7 @@
                         <i class="fa-regular fa-calendar"></i>
                         <div class="input-group__group content">
                             <label for="sign-up-birth-date">Birth date</label>
-                            <input type="date" placeholder="Enter your birth date" id="birth-date">
+                            <input type="date" id="sign-up-birth-date">
                         </div>
                     </div>
 
@@ -52,7 +52,7 @@
                         <i class="fa-solid fa-lock"></i>
                         <div class="input-group__group content">
                             <label for="sign-up-pass">Password</label>
-                            <input type="password" placeholder="Enter password" id="password">
+                            <input type="password" placeholder="Enter password" id="sign-up-pass">
                         </div>
                     </div>
 
@@ -60,18 +60,18 @@
                         <i class="fa-solid fa-lock"></i>
                         <div class="input-group__group content">
                             <label for="sign-up-confirm-pass">Confirm Password</label>
-                            <input type="password" placeholder="Confirm password" id="confirm-password">
+                            <input type="password" placeholder="Confirm password" id="sign-up-confirm-pass">
                         </div>
                     </div>
 
                     <label for="terms-of-services" class="grid-col-span-2">
-                    <input type="checkbox" class="grid-col-span-2"> I have read and accepted <a>Terms of services</a> and <a>Privacy policy</a></label>
+                    <input id="terms-of-services" type="checkbox" class="grid-col-span-2"> I have read and accepted <a>Terms of services</a> and <a>Privacy policy</a></label>
 
                     <button type="submit" class="grid-col-span-2">Create an account</button>
                 </div>
 
                 <div class="alternative-log-in">
-                    <h4 id="signin">Already have an account? <a href="#"><bold>Login</bold></a></h4>
+                    <h4 id="signin">Already have an account? <a href="#">Login</a></h4>
                     
                     <div class="line"></div>
                     <h5>Or log in with</h5>
@@ -102,15 +102,15 @@
                     <div class="input-group__group grid-col-span-2">
                         <i class="fa-regular fa-envelope"></i>
                         <div class="input-group__group content">
-                            <label for="sign-up-email">Email</label>
-                            <input type="email" placeholder="Enter your email">
+                            <label for="sign-in-email">Email</label>
+                            <input id="sign-in-email" type="email" placeholder="Enter your email">
                         </div>
                     </div>
                     <div class="input-group__group grid-col-span-2">
                         <i class="fa-solid fa-lock"></i>
                         <div class="input-group__group content">
-                            <label for="sign-up-pass">Password</label>
-                            <input type="password" placeholder="Enter password" id="log-in-password">
+                            <label for="sign-in-pass">Password</label>
+                            <input type="password" placeholder="Enter password" id="sign-in-pass">
                         </div>
                     </div>
                     <div class="keep-logged-in">
