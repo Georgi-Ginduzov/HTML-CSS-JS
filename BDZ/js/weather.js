@@ -17,7 +17,7 @@ const displayData =(weather)=>{
     temp.innerText = `${celsius}°C`;
 }
     
-fetch(`http://api.weatherapi.com/v1/current.json?key=ace1109ee27d4f01a45185757242201&q=${city}`)
+fetch(`http://api.weatherapi.com/v1/current.json?key=ace1109ee27d4f01a45185757242201&q=Sofia`)
 .then(response => response.json())
 .then(displayData)
 .catch(err => alert(`Wrong ${city} name!`));
