@@ -16,21 +16,10 @@
                 <ul class="links">
                     <li><a href="/#index.html" class="current-page">Home</a></li>
                     <li><a href="/plan-jorney.html">Live Trains</a></li>
-                    <li><a href="/#trains">Status & disruptions</a></li>
+                    <!--<li><a href="/#trains">Status and disruptions</a></li>-->
                 </ul>
                 <a href="/log-in-register.html" class="action-btn">Log in</a>
-                <toggle class="toggle-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </toggle>
             </nav>
-
-            <div class="dropdown-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="internatioinal-ticket">International Ticket</a></li>
-                <li><a href="live-location">Live Location</a></li>
-                <li><a href="contact">Trains</a></li>
-                <li><a href="#" class="action-btn">Log in</a></li>
-            </div>
         
             <!-- Beginning content -->
             <section class="hero" id="hero">
@@ -45,7 +34,7 @@
         <!-- Form for booking a ticket -->  
         <form class="form-booking" id="train-submission-form">
             <div class="book-ticket">
-                <label for="depart-from">From</label>
+                <label for="depart-from-city">From</label>
                 <input type="text" placeholder="Depart" id="depart-from-city">
             </div>
 
@@ -56,12 +45,12 @@
 
             <div class="book-ticket">
                 <label for="book-ticket__date">Date</label>
-                <input type="date"  id="date" placeholder="">
+                <input type="date"  id="book-ticket__date">
             </div>
                     
             <div class="book-ticket">
                 <label for="coach">Coach</label>
-                <select class="coach__options" >
+                <select class="coach__options" id="coach">
                     <option value="standard-class">Standard</option>
                     <option value="first-class">First Class</option>
                     <option value="sleeper-coach">Sleeper</option>
@@ -71,7 +60,7 @@
             </div>
             
             <div class="book-ticket">
-                <label for="passengers">Passengers</label> 
+                <label for="passengers-count">Passengers</label> 
                 <select name="passengers-dropdown" class="passengers-count" id="passengers-count">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -174,8 +163,8 @@
 
             </section>
                 
-            <section class="discover-more">
-                <!-- tips for using train services, route/station info -->
+            <!--<section class="discover-more">
+                tips for using train services, route/station info
                 <h2>Discover more</h2>
                 <div class="discover-more wrapper">
                 <div class="discover-more_box">
@@ -219,7 +208,7 @@
                     </div>
                 </div>
             </div>
-            </section>
+            </section>-->
         
         </main>
 

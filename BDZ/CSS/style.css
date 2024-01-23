@@ -293,10 +293,12 @@ h4{
     justify-items: center;
     align-content: center;
     grid-template: 
-    "stories-story   stories-story stories-story";
+    "stories-story stories-story stories-story";
     grid-gap: 1rem;
 
+
     margin: 2px auto;
+    padding: 0 1rem;
 }
 
 .stories-story{
@@ -632,31 +634,15 @@ footer a{
 
 /* RESPONSIVE DESIGN*/ 
 @media(max-width: 922px){
-    nav .links,
-    nav .action-btn{
-        display: none;
-    }
-
-    nav .toggle-btn{
-        display: block;
-    }
-
-    .dropdown-menu{
-        display: block;
-    }
-
-    .stories_stories{
+    .stories{
         grid-template:
+        "stories-story stories-story"
         "stories-story stories-story";
-    }
+    }   
 }
 
 @media (max-width: 576px) {
-    .dropdown-menu {
-        left: 2rem;
-    }
-
-    .stories_stories{
+    .stories{
         grid-template:
         "stories-story";
     }
